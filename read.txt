@@ -1,0 +1,1 @@
+เริ่มมาตอนนี้คือเข้าใจว่าการใช้nextjsคือการใช้react frameworkเพื่อสร้างfull stack
