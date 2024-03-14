@@ -1,12 +1,16 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import logoimg from '/assets/logo.png'
 import Classes from './main-header.module.css'
+import MainHeaderBackground from '../components/main-header-background'
 function MainHeader() {
   return (
-   <header className={Classes.header} >
+    <> 
+    <MainHeaderBackground/>
+    <header className={Classes.header} >
     <Link className={Classes.logo} href="/">
-        <img src={logoimg.src} alt ="ชามที่มีข้าว"></img>
+        <Image src={logoimg} alt ="ชามที่มีข้าว" priority/>
         Nextlevel food
     </Link>
     <nav className={Classes.nav}>
@@ -20,6 +24,8 @@ function MainHeader() {
         </ul>
     </nav>
    </header>
+    </>
+  
   )
 }
 
