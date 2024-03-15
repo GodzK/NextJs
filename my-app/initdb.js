@@ -191,9 +191,7 @@ async function initData() {
       )
    `);
 
-  for (const meal of dummyMeals) {
-    stmt.run(meal);
-  }
+ 
 }
 
 initData();

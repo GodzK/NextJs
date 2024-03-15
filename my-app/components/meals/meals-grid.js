@@ -1,6 +1,7 @@
+"use client"
 import React, { useLayoutEffect } from 'react'
 import MealItem from './meal.item'
-import classes from './meals-grid-module.css'
+import classes from './meals-grid.module.css'
 function MealsGrid({meals}) {
   return (
    <ul className={classes.meals}>
