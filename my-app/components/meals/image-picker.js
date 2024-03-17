@@ -1,7 +1,7 @@
 'use client';
 
 import React from "react";
-import {useRef ,  useState} from 'react';
+import {useRef ,useState} from 'react';
 import classes from './image-picker.module.css';
 import Image from 'next/image';
 
@@ -18,6 +18,7 @@ function handleImageChange(event){
 
     if(!file)
     {
+      setPickedImage(null);
       return;
     } 
 
@@ -48,6 +49,7 @@ function handleImageChange(event){
           name={name}
           ref={imageInput}
           onChange={handleImageChange}
+          required
         />
         <button className={classes.button} type="button" onClick={handlePickClick}>Pick an Image</button>
       </div>
